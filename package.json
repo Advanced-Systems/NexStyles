@@ -1,7 +1,10 @@
 {
-  "name": "nexstyles",
+  "name": "@advanced-systems/nexstyles",
+  "author": "Stefan Greve",
   "version": "0.0.1",
+  "license": "MIT",
   "description": "An iOS-inspired lightweight React component library",
+  "homepage": "https://github.com/Advanced-Systems/NexStyles#readme",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
   },
@@ -9,12 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/Advanced-Systems/NexStyles.git"
   },
-  "author": "Stefan Greve",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Advanced-Systems/NexStyles/issues"
   },
-  "homepage": "https://github.com/Advanced-Systems/NexStyles#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Advanced-Systems"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
