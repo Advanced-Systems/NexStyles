@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Button.scss";
 
-interface IButton {
+export interface IButton {
   label: string;
 }
 
