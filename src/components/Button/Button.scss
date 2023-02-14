@@ -1,19 +1,28 @@
 .adv-sys-button {
-  background: white;
+  all: unset;
+  color: white;
+  padding: 12px;
+  border-radius: 18px;
+  text-align: center;
+  cursor: pointer;
+
+  &[data-state="0"] {
+    color: black;
+  }
 
   &[data-state="1"] {
     background-color: blue;
   }
 
   &[data-state="2"] {
-    background: green;
+    background-color: green;
   }
 
   &[data-state="3"] {
-    background: yellow;
+    background-color: yellow;
   }
 
   &[data-state="4"] {
-    background: red;
+    background-color: red;
   }
 }
