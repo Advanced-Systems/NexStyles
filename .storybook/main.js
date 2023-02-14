@@ -5,6 +5,7 @@ module.exports = {
   ],
   core: {
     builder: "webpack5",
+    disableTelemetry: true,
   },
   addons: [
     "@storybook/addon-links",
