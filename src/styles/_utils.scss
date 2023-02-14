@@ -1,0 +1,11 @@
+@mixin margin-fill-available($margin-left: 1.5em, $margin-right: 1.5em) {
+  margin-left: $margin-left;
+  margin-right: $margin-right;
+
+  width: -moz-available;
+  width: -webkit-fill-available;
+
+  @supports (width: stretch) {
+    width: stretch;
+  }
+}
