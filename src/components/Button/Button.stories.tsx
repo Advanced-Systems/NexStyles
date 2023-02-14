@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import Button from './Button';
+import { State } from '../../enumerations';
 
 export default {
   title: 'NexStyles/Button',
@@ -10,12 +11,9 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-export const HelloWorld = Template.bind({});
-HelloWorld.args = {
-  label: 'Hello World!',
-};
-
-export const HolaMundo = Template.bind({});
-HolaMundo.args = {
-  label: 'Hola Mundo!',
+export const MobileButton = Template.bind({});
+MobileButton.args = {
+  label: 'Hello',
+  state: State.Success,
+  onClick: () => alert("World!"),
 };
