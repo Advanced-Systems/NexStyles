@@ -15,5 +15,9 @@ export const MobileButton = Template.bind({});
 MobileButton.args = {
   label: 'Hello',
   state: State.Success,
+  hidden: false,
+  disabled: false,
+  primary: true,
+  mobile: false,
   onClick: () => alert("World!"),
 };

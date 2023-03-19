@@ -1,0 +1,13 @@
+@use './variables' as var;
+
+:export {
+  lightGreen: var.$light-green;
+  lightRed: var.$light-red;
+  lightBlue: var.$light-blue;
+  lightYellow: var.$light-yellow;
+
+  darkGreen: var.$dark-green;
+  darkRed: var.$dark-red;
+  darkBlue: var.$dark-blue;
+  darkYellow: var.$dark-yellow;
+}

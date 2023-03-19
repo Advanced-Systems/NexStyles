@@ -1,28 +1,59 @@
+@use '../../styles/utils';
+@use '../../styles/variables' as var;
+
 .adv-sys-button {
   all: unset;
+  font-family: var.$font-sans-serif;
+  font-size: var.$fs-6;
+  font-weight: bold;
+  writing-mode: horizontal-tb;
   color: white;
-  padding: 12px;
-  border-radius: 18px;
+  padding: 0.6em 1.2em;
+  border-radius: 2em;
   text-align: center;
+  display: inline-block;
+  line-height: 1;
   cursor: pointer;
 
-  &[data-state="0"] {
-    color: black;
+  &[hidden] {
+    display: none;
   }
 
-  &[data-state="1"] {
-    background-color: blue;
+  &[disabled]{
+    opacity: 0.5;
   }
 
-  &[data-state="2"] {
-    background-color: green;
+  &.mobile {
+    @include utils.margin-fill-available;
   }
 
-  &[data-state="3"] {
-    background-color: yellow;
+  &.primary {
+    &[data-state="0"] {
+      color: black;
+    }
+
+    &[data-state="1"] {
+      background-color: green;
+    }
+
+    &[data-state="2"] {
+      background-color: blue;
+    }
+
+    &[data-state="3"] {
+      background-color: yellow;
+    }
+
+    &[data-state="4"] {
+      background-color: red;
+    }
   }
 
-  &[data-state="4"] {
-    background-color: red;
+  &.secondary {
+    &[data-state="0"] {
+      color: black;
+      background-color: transparent;
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+    }
   }
 }
