@@ -5,8 +5,6 @@ import IElement from "./IElement.interface";
 export default interface IButton extends IElement {
   label: string;
   state?: State;
-  hidden?: boolean;
-  disabled?: boolean;
   primary?: boolean;
   onClick?: (event?: React.MouseEvent<HTMLButtonElement>) => void;
 }
