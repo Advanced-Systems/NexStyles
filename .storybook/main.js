@@ -24,5 +24,8 @@ module.exports = {
   features: {
     previewMdx2: true,
   },
-  framework: "@storybook/react"
-}
+  framework: "@storybook/react",
+  docs: {
+    autodocs: true,
+  }
+};
