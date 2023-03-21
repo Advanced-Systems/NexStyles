@@ -1,13 +1,41 @@
-@use './variables' as var;
+@use "./variables" as var;
 
 :export {
-  lightGreen: var.$light-green;
   lightRed: var.$light-red;
-  lightBlue: var.$light-blue;
+  lightOrange: var.$light-orange;
   lightYellow: var.$light-yellow;
+  lightGreen: var.$light-green;
+  lightMint: var.$light-mint;
+  lightCyan: var.$light-cyan;
+  lightBlue: var.$light-blue;
+  lightIndigo: var.$light-indigo;
+  lightPurple: var.$light-purple;
+  lightPink: var.$light-pink;
 
-  darkGreen: var.$dark-green;
   darkRed: var.$dark-red;
-  darkBlue: var.$dark-blue;
+  darkOrange: var.$dark-orange;
   darkYellow: var.$dark-yellow;
+  darkGreen: var.$dark-green;
+  darkMint: var.$dark-mint;
+  darkTeal: var.$dark-teal;
+  darkCyan: var.$dark-cyan;
+  darkBlue: var.$dark-blue;
+  darkIndigo: var.$dark-indigo;
+  darkPurple: var.$dark-purple;
+  darkPink: var.$dark-pink;
+  darkBrown: var.$dark-brown;
+
+  lightGray1: var.$light-gray-1;
+  lightGray2: var.$light-gray-2;
+  lightGrey3: var.$light-gray-3;
+  lightGray4: var.$light-gray-4;
+  lightGrey5: var.$light-gray-5;
+  lightGray6: var.$light-gray-6;
+
+  darkGray1: var.$dark-gray-1;
+  darkGray2: var.$dark-gray-2;
+  darkGrey3: var.$dark-gray-3;
+  darkGray4: var.$dark-gray-4;
+  darkGrey5: var.$dark-gray-5;
+  darkGray6: var.$dark-gray-6;
 }
