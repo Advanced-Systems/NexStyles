@@ -5,14 +5,22 @@ import { IButton } from "../../interfaces";
 
 import "./Button.scss";
 import { LightTheme } from "../../classes";
+import { ThemeSwitcherService } from "../../services";
 
 class Button extends React.Component<IButton> {
   public static defaultProps = {
     id: `adv-btn-${uuidv4()}`,
-    className: '',
+    className: "",
     state: State.Success,
     primary: true,
   };
+
+  private themeSwitcherService = new ThemeSwitcherService();
+
+  constructor(props: IButton) {
+    super(props);
+    this.themeSwitcherService.setTheme(LightTheme);
+  }
 
   render(): React.ReactNode {
     return (
@@ -21,10 +29,12 @@ class Button extends React.Component<IButton> {
         className={[
           "adv-sys-button",
           this.props.className,
-          this.props.mobile && 'mobile',
-          this.props.primary ? 'primary' : 'secondary',
-          LightTheme.warning, // NOTE: testing import of variables from SCSS to TS
-        ].filter(Boolean).join(' ')}
+          this.props.mobile && "mobile",
+          this.props.primary ? "primary" : "secondary",
+          this.themeSwitcherService.getTheme, // NOTE: testing import of variables from SCSS to TS
+        ]
+          .filter(Boolean)
+          .join(" ")}
         style={this.props.style}
         onClick={this.props.onClick}
         data-state={this.props.state}
