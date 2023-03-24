@@ -1,0 +1,18 @@
+
+# ---[ 72 char cutoff line ]--------------------------------------------
+#
+# Git Commit Message
+# ==================
+#
+# <type>: <description> (<issue>)
+#
+# * DEV      edit build tools, settings or configuration file
+# * FEAT     new feature for the user (client-facing code)
+# * FIX      bug fix for the user
+# * TEST     adding missing tests or refactoring existing tests
+# * REFACTOR refactoring production code
+# * DOCS     changes to the documentation
+# * STYLE    formatting etc; no production code change
+# * CHORE    updating grunt tasks etc; no production code change
+#
+# ---[ 72 char cutoff line ]--------------------------------------------
