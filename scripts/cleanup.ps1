@@ -1,6 +1,4 @@
-using namespace System.IO
-
-Push-Location -Path $([Path]::GetDirectoryName($PSScriptRoot))
+Push-Location -Path $(git rev-parse --show-toplevel)
 
 $LocalConfigFiles = @(
   ".vscode/"

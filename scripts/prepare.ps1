@@ -1,6 +1,4 @@
-using namespace System.IO
-
-Push-Location -Path $([Path]::GetDirectoryName($PSScriptRoot))
+Push-Location -Path $(git rev-parse --show-toplevel)
 
 Write-Host "(1/2) Update local Git settings" -ForegroundColor Yellow
 git config --local commit.template ".gitmessage"
